@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+  }
+
+.container-fluid {
+    padding: 60px 50px;
+    background-color: rgb(21, 21, 21);
+  }
+
+  .bg-gray{
+    background-color: rgb(28, 28, 28)
+}
+
+.header{
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(25, 25, 25, 0.2)), url(../img/header.jpg);
+}
+
+h2{
+    color: #9d1c2e;
+
+}
+h3{
+ color: whitesmoke;
+}
+p{
+    color: whitesmoke;
+    font-size: 15px;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+.boton{
+    padding: 2% 0;
+    box-shadow: 5px 5px 0px black;
+  }
+
+.navbar {  
+    margin-bottom: 0;
+    background-color: #9d1c2e;
+    border: 0;
+    font-size: 14px !important;
+    text-shadow: 1px 1px 1px black;
+    z-index: 9999;
+     line-height: 1.42857143; 
+    letter-spacing: 2px; 
+    border-radius: 0;
+    justify-content: center;
+  }
+  .icon-bar{
+    background-color: white!important;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: white !important ;
+  }
+  .navbar-nav li a:hover{
+    color: white !important; 
+    background-color: #9d1c2e!important;
+    box-shadow: 0px -5px 0px black inset !important;
+  }
+  .navbar-nav li.active a{
+    color: #9d1c2e !important; 
+    background-color: white!important;
+    box-shadow: 0px -5px 0px black inset !important;
+    text-shadow: 0px 0px 0px black;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #9d1c2e !important;
+  }
+
+
+  .thumbnail{
+    color: black;
+  }
+
+  footer{
+    color: rgb(156, 28, 45)
+    
+  }
+
+  .bg-redish{
+    background-image: linear-gradient(rgba(94, 18, 28, 0.9),rgba(156, 28, 45,0.9)), url(../img/comic.jpg) ;
+  }
+
+ 
