@@ -236,9 +236,6 @@ a:focus,.enlace:focus{
 
 
 @media screen and (max-width: 480px) {
-  p {
-    font-size: 14px;
-  }
   
   .header h3{
     text-align: center;
