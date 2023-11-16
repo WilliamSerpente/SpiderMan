@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Inter&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 html{
@@ -16,6 +18,9 @@ html{
   .bg-gray{
     background-color: rgb(28, 28, 28)
 }
+.color-red{
+  color: #9d1c2e;
+}
 
 .header{
     height: 550px;
@@ -26,28 +31,41 @@ html{
 
 h2{
     color: #9d1c2e;
-
+    font-family: 'Bangers', sans-serif;
+    font-size: 38px;
 }
 h3{
  color: whitesmoke;
+ font-family: 'Bangers', sans-serif;
 }
 p{
     color: whitesmoke;
-    font-size: 15px;
+    font-size: 20px;
     padding-top: 1%;
     padding-bottom: 2%;
+}
+
+a :hover,.enlace:hover{
+  color: black;
+  text-decoration: none;
+}
+a:focus,.enlace:focus{
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 .boton{
     padding: 2% 0;
     box-shadow: 5px 5px 0px black;
+    width: 100%;
   }
 
 .navbar {  
     margin-bottom: 0;
     background-color: #9d1c2e;
     border: 0;
-    font-size: 14px !important;
+
+    font-size: 18px !important;
     text-shadow: 1px 1px 1px black;
     z-index: 9999;
      line-height: 1.42857143; 
@@ -60,6 +78,7 @@ p{
   }
   .navbar li a, .navbar .navbar-brand {
     color: white !important ;
+    font-family: 'Bangers', sans-serif !important; 
   }
   .navbar-nav li a:hover{
     color: white !important; 
@@ -82,13 +101,135 @@ p{
     color: black;
   }
 
-  footer{
-    color: rgb(156, 28, 45)
-    
+
+  label{
+    color: #9d1c2e;
+    margin: 8px 0px;
   }
+
+  textarea{
+    resize: vertical;
+    margin-bottom: 4%;
+  }
+
 
   .bg-redish{
     background-image: linear-gradient(rgba(94, 18, 28, 0.9),rgba(156, 28, 45,0.9)), url(../img/comic.jpg) ;
   }
 
+  footer{
+    color: rgb(156, 28, 45)
+    
+  }
+
+ footer a,.color-white{
+  color: rgb(223, 223, 223);
+ }
+
+ footer a{
+  font-size: 15px;
+ }
+ footer ul li{
+  padding-top: 5px;
+ }
+
+
  
+/** Animaciones */
+ .slide {
+   animation-name: slide;
+   -webkit-animation-name: slide;
+   animation-duration: 1s;
+   -webkit-animation-duration: 1s;
+   visibility: visible;
+ }
+ @keyframes slide {
+   0% {
+     opacity: 0;
+     transform: translateX(-20%);
+   } 
+   100% {
+     opacity: 1;
+     transform: translateX(0%);
+   }
+ }
+ @-webkit-keyframes slide {
+   0% {
+     opacity: 0;
+     -webkit-transform: translateX(-20%);
+   } 
+   100% {
+     opacity: 1;
+     -webkit-transform: translateX(0%);
+   }
+ }
+
+ .slideup {
+  animation-name: slideup;
+  -webkit-animation-name: slideup;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+@keyframes slideup {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slideup {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+/* RESPONSIVENESS */
+
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+  
+  .header img{
+    width: 200px;
+    margin-left: -100px;
+    position: static;
+  }
+  .container-fluid img {
+    width: 400px ;
+  }
+  .spidermano img{
+    display: none !important;
+  }
+  .creador img{
+    position: absolute;
+    left: 0px;
+    width: 200px;
+  }
+  iframe{
+    width: 300px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  .centerText{
+    height: 350px;
+  }
+  .centerText h1{
+    font-size: 38px;
+  }
+}
+
